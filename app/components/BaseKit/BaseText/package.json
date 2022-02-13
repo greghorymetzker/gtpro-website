@@ -1,0 +1,6 @@
+{
+    "name": "BaseText",
+    "version": "0.0.0",
+    "public": true,
+    "main": "./BaseText.js"
+}

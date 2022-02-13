@@ -1,0 +1,6 @@
+{
+    "name": "BaseComponents",
+    "version": "0.0.0",
+    "public": true,
+    "main": "./index.js"
+}

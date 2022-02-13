@@ -1,0 +1,69 @@
+{
+    "private": true,
+    "name": "gtproject",
+    "description": "",
+    "license": "",
+    "scripts": {
+        "build": "remix build",
+        "dev": "node -r dotenv/config node_modules/.bin/remix dev",
+        "start": "remix-serve build",
+        "start:dev": "node -r dotenv/config node_modules/.bin/remix-serve build",
+        "generate": "plop",
+        "generate:prisma": "prisma generate",
+        "gen": "plop",
+        "postinstall": "remix setup node && yarn generate:prisma",
+        "sb": "storybook",
+        "storybook": "start-storybook -p 6006",
+        "build-storybook": "build-storybook"
+    },
+    "prisma": {
+        "seed": "node prisma/seed.js"
+    },
+    "dependencies": {
+        "@prisma/client": "^3.7.0",
+        "@remix-run/react": "^1.1.1",
+        "@remix-run/serve": "^1.1.1",
+        "@remix-validated-form/with-yup": "^1.0.0",
+        "axios": "^0.25.0",
+        "bcryptjs": "^2.4.3",
+        "frappe-gantt": "^0.6.0",
+        "gantt-task-react": "^0.3.7",
+        "history": "^5.2.0",
+        "jsonwebtoken": "^8.5.1",
+        "locomotive-scroll": "^4.1.3",
+        "lodash.debounce": "^4.0.8",
+        "normalize.css": "^8.0.1",
+        "prisma": "^3.7.0",
+        "react": "^17.0.2",
+        "react-custom-scroll": "^4.3.0",
+        "react-dom": "^17.0.2",
+        "react-image-and-background-image-fade": "^1.0.6",
+        "react-router-dom": "^6.2.1",
+        "react-spring": "^9.3.3",
+        "react-text-mask": "^5.4.3",
+        "react-tooltip": "^4.2.21",
+        "react-virtual": "^2.10.4",
+        "remix": "^1.1.1",
+        "remix-auth": "^3.1.0",
+        "remix-auth-form": "^1.1.1",
+        "remix-validated-form": "^3.0.0",
+        "text-mask-addons": "^3.8.0",
+        "use-resize-observer": "^8.0.0",
+        "yup": "^0.32.11"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.16.7",
+        "@remix-run/dev": "^1.1.1",
+        "@storybook/addon-actions": "^6.4.13",
+        "@storybook/addon-essentials": "^6.4.13",
+        "@storybook/addon-links": "^6.4.13",
+        "@storybook/react": "^6.4.13",
+        "babel-loader": "^8.2.3",
+        "dotenv": "^10.0.0",
+        "plop": "^3.0.5"
+    },
+    "engines": {
+        "node": ">=14"
+    },
+    "sideEffects": false
+}

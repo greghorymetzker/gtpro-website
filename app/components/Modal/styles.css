@@ -1,0 +1,126 @@
+.offset {
+    position: fixed;
+    top: 0%;
+    height: 140vh;
+    width: 100vw;
+    left: 0%;
+    background-color: #4040406b;
+    transition: 0.2s background-color ease-in-out;
+    z-index: 300;
+    transform: translate(-50%, -50%);
+    top: 30%;
+    left: 50%;
+    z-index: 3001;
+}
+
+.offset:hover {
+    cursor: pointer;
+}
+
+.ctn {
+    position: relative;
+    display: inline-table;
+    padding: 48px 20px;
+    transform-origin: top;
+    opacity: 0;
+    z-index: 3001;
+    width: auto;
+    min-width: 350px;
+    /* left: 50%; */
+    transform: translateY(-20px);
+    /* top: 50%; */
+    box-sizing: border-box;
+    box-shadow: 0px 3px 2px 0px #5a5a5a21;
+    border-radius: 8px;
+    background-color: #ffffff;
+    margin: auto;
+}
+
+.modalcontent {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.modalclose {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 20;
+}
+
+.modalclose span {
+    width: 16px;
+    height: 16px;
+    background-color: var(--color-salmon);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    transition: 0.2s all ease-in-out;
+}
+
+.modalclose svg {
+    fill: #fff;
+    width: 8px;
+    height: 8px;
+    z-index: 2;
+    position: relative;
+}
+
+.modalclose span:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+.header {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    padding: 14px 20px;
+    box-sizing: border-box;
+    color: var(--color-salmon);
+    text-transform: uppercase;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header>span:nth-child(1) {
+    width: 20px;
+    height: 20px;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #b8dfff;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.modalctn {
+    overflow: auto;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    position: absolute;
+    position: fixed;
+    z-index: 200;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+}

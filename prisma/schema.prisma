@@ -1,0 +1,52 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATA_BASE_URL")
+}
+
+model auths {
+  id        Int      @id @default(autoincrement())
+  email     String   @db.VarChar(255)
+  name      String   @db.VarChar(255)
+  password  String   @db.VarChar(255)
+  createdAt DateTime @db.DateTime(0)
+  updatedAt DateTime @db.DateTime(0)
+  role      String   @default("admin") @db.VarChar(255)
+}
+
+model blogs {
+  title       String?   @db.VarChar(255)
+  id          Int       @id @default(autoincrement())
+  publishDate String?   @db.VarChar(255)
+  article     String?   @db.LongText
+  image       String?   @db.LongText
+  callaction  Boolean?
+  tags        String?   @db.VarChar(255)
+  description String?   @db.MediumText
+  link        String?   @db.VarChar(255)
+  active      Boolean?  @default(true)
+  createdAt   DateTime  @db.DateTime(0)
+  updatedAt   DateTime  @db.DateTime(0)
+  cover       String?   @db.LongText
+  imagemobile String?   @db.LongText
+  members     members[] @relation(references: [id])
+}
+
+model members {
+  id             Int     @id @default(autoincrement())
+  name           String
+  image          String
+  responsibility String
+  blogs          blogs[] @relation(references: [id])
+}
+
+model leads {
+  id        Int      @id @default(autoincrement())
+  email     String?  @db.VarChar(255)
+  name      String?  @db.VarChar(255)
+  createdAt DateTime @db.DateTime(0)
+  updatedAt DateTime @db.DateTime(0)
+}

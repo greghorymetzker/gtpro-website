@@ -1,0 +1,93 @@
+.loading-ctn {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+    background-color: #00000040;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.loading-ctn .content {
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0px 4px 5px #2f2f2f20;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px
+}
+
+.loading-ctn .content span {
+    color: var(--color-medium_slate_blue);
+    line-height: 1em;
+    font-size: 0.7em;
+    text-align: center;
+    text-transform: unset;
+    font-weight: 800;
+    animation: blinker 1.5s linear infinite;
+}
+
+@-webkit-keyframes sk_three_bounce {
+    0%,
+    80%,
+    100% {
+        -webkit-transform: scale(0) translateZ(0) perspective(1px);
+        transform: scale(0) translateZ(0) perspective(1px);
+    }
+    40% {
+        -webkit-transform: scale(1) translateZ(0) perspective(1px);
+        transform: scale(1) translateZ(0) perspective(1px);
+    }
+}
+
+@keyframes sk_three_bounce {
+    0%,
+    80%,
+    100% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    40% {
+        -webkit-transform: scale(0.7);
+        transform: scale(0.7);
+    }
+}
+
+.sk_three_bounce {
+    width: 4em;
+    margin: auto;
+    text-align: center;
+}
+
+.sk_three_bounce .sk_child {
+    width: 0.8em;
+    height: 0.8em;
+    background-color: var(--color-medium_slate_blue);
+    border-radius: 100%;
+    display: inline-block;
+    -webkit-animation: sk_three_bounce 1.4s ease-in-out 0s infinite both;
+    animation: sk_three_bounce 1.4s ease-in-out 0s infinite both;
+}
+
+.sk_three_bounce .sk_bounce_1 {
+    -webkit-animation-delay: -0.32s;
+    animation-delay: -0.32s;
+}
+
+.sk_three_bounce .sk_bounce_2 {
+    -webkit-animation-delay: -0.16s;
+    animation-delay: -0.16s;
+}

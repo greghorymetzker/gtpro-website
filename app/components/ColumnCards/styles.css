@@ -1,0 +1,371 @@
+  .inovation {
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      border-color: #EBEBED;
+      border-width: 1px;
+      border-style: solid;
+      border-bottom-left-radius: 14px;
+      border-bottom-right-radius: 14px;
+      border-top-left-radius: 14px;
+      border-top-right-radius: 14px;
+      width: 410px;
+  }
+  
+  .inovation_headerlist {
+      display: flex;
+      flex-direction: row;
+      padding: 20px;
+      box-sizing: border-box;
+  }
+  
+  .inovation_title {
+      display: flex;
+      flex-direction: row;
+      margin-right: 14px
+  }
+  
+  .inovation_inovao {
+      font-weight: 800;
+      font-size: 1.3em;
+      margin-right: 8px;
+      text-align: left
+  }
+  
+  .inovation_inovao {
+      font-weight: 800;
+      font-size: 1.4em;
+      color: #000;
+      text-align: left
+  }
+  
+  .inovation_number {
+      background-color: #000;
+      display: flex;
+      flex-direction: row;
+      padding-top: 6px;
+      padding-bottom: 6px;
+      padding-left: 6px;
+      padding-right: 6px;
+      border-bottom-left-radius: 4px;
+      border-bottom-right-radius: 4px;
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px
+  }
+  
+  .inovation_total {
+      font-weight: 800;
+      font-size: 0.7em;
+      color: #F8F8F8;
+      text-align: left
+  }
+  
+  .inovation_inprocess {
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      padding-bottom: 10px;
+  }
+  
+  .inovation_emprocesso {
+      font-weight: 800;
+      font-size: 0.7em;
+      color: #000;
+      text-align: left
+  }
+  
+  .inovation_cards {
+      display: flex;
+      flex-direction: column;
+  }
+  
+  .inovation_card {
+      justify-content: flex-start;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start
+  }
+  
+  .inovation_infocard {
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      border-color: #EBEBED;
+      border-width: 1px;
+      border-style: solid;
+      padding-top: 12px;
+      border-bottom-left-radius: 12px;
+      border-bottom-right-radius: 12px;
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px
+  }
+  
+  .inovation_header {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 12px
+  }
+  
+  .inovation_tags {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 8px
+  }
+  
+  .inovation_reconstruoregistrocorreodeponto {
+      font-weight: 500;
+      font-size: 1.1em;
+      color: #000;
+      text-align: left
+  }
+  
+  .inovation_info {
+      justify-content: flex-start;
+      display: flex;
+      flex-direction: row;
+      border-color: #EBEBED;
+      border-width: 1px;
+      border-style: solid;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      padding-left: 12px;
+      border-bottom-left-radius: 12px;
+      border-bottom-right-radius: 12px
+  }
+  
+  .inovation_deadline {
+      display: flex;
+      flex-direction: row;
+      margin-right: 30px
+  }
+  
+  .inovation_icon_calendar {
+      margin-right: 6px
+  }
+  
+  .inovation_ {
+      font-weight: 600;
+      font-size: 0.7em;
+      color: #000;
+      text-align: left
+  }
+  
+  .inovation_priority {
+      display: flex;
+      flex-direction: row;
+      margin-right: 30px
+  }
+  
+  .inovation_icon_alert {
+      margin-right: 6px
+  }
+  
+  .inovation_baixa {
+      font-weight: 600;
+      font-size: 0.7em;
+      color: #000;
+      text-align: left
+  }
+  
+  .inovation_trello {
+      display: flex;
+      flex-direction: row;
+  }
+  
+  .inovation_icon_trello {
+      margin-right: 6px
+  }
+  
+  .inovation_cardtrello {
+      font-weight: 600;
+      font-size: 0.7em;
+      color: #000;
+      text-align: left
+  }
+  
+  .inovation_completed {
+      display: flex;
+      flex-direction: column;
+      padding: 0px 20px;
+      padding-top: 10px;
+  }
+  
+  .inovation_concluidos {
+      font-weight: 800;
+      font-size: 0.7em;
+      color: #000;
+      text-align: left;
+  }
+  
+  .card {
+      justify-content: flex-start;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      margin: 10px 0px;
+      width: 100%;
+  }
+  
+  .card_infocard {
+      justify-content: flex-end;
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      border-color: #EBEBED;
+      border-width: 1px;
+      border-style: solid;
+      /* padding: 12px; */
+      border-bottom-left-radius: 12px;
+      border-bottom-right-radius: 12px;
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+      width: 100%;
+  }
+  
+  .card_header {
+      /* justify-content: flex-end; */
+      display: flex;
+      flex-direction: column;
+      /* align-items: center; */
+      padding-bottom: 12px;
+      padding: 12px;
+      width: 100%;
+  }
+  
+  .card_tags {
+      /* justify-content: flex-end; */
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 8px
+  }
+  
+  .card_reconstruoregistrocorreodeponto {
+      font-family: Montserrat;
+      font-weight: 500;
+      font-size: 1.3em;
+      color: #000;
+      text-align: left
+  }
+  
+  .card_info {
+      justify-content: flex-start;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      border-color: #EBEBED;
+      border-width: 0px;
+      border-top-width: 1px;
+      border-style: solid;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      padding-left: 12px;
+      width: 100%;
+  }
+  
+  .card_info i {
+      color: #B4B4B6;
+      margin-right: 5px;
+      font-size: 0.9em;
+      transition: 0.2s all ease-in-out;
+  }
+  
+  .card_deadline {
+      justify-content: flex-end;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-right: 30px
+  }
+  
+  .card_icon_calendar {
+      margin-right: 6px
+  }
+  
+  .card_ {
+      font-family: Montserrat;
+      font-weight: 600;
+      font-size: 0.7em;
+      color: #000;
+      text-align: left
+  }
+  
+  .card_priority {
+      justify-content: flex-end;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-right: 30px
+  }
+  
+  .card_icon_alert {
+      margin-right: 6px
+  }
+  
+  .card_baixa {
+      font-family: Montserrat;
+      font-weight: 600;
+      font-size: 0.7em;
+      color: #000;
+      text-align: left
+  }
+  
+  .card_trello {
+      justify-content: flex-end;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      text-decoration: none;
+  }
+  
+  .card_trello:hover .card_cardtrello {
+      color: #7F7EFF
+  }
+  
+  .card_icon_trello {
+      margin-right: 6px
+  }
+  
+  .card_trello:hover i {
+      color: #7F7EFF
+  }
+  
+  .card_cardtrello {
+      font-family: Montserrat;
+      font-weight: 600;
+      font-size: 0.7em;
+      color: #000;
+      text-align: left;
+      transition: 0.2s all ease-in-out;
+  }
+  
+  .typetask {
+      justify-content: center;
+      background-color: #000;
+      display: flex;
+      flex-direction: row;
+      padding-top: 4px;
+      padding-bottom: 4px;
+      padding-left: 8px;
+      padding-right: 8px;
+      border-bottom-left-radius: 6px;
+      border-bottom-right-radius: 6px;
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+      margin-right: 5px;
+  }
+  
+  .typetask_inovao {
+      font-family: Montserrat;
+      font-weight: 800;
+      font-size: 0.5em;
+      color: #fff;
+      text-align: left;
+      text-transform: uppercase;
+  }
+  
+  .inovation_ctn {
+      max-height: 77vh;
+      overflow: auto;
+      margin-bottom: 20px;
+  }

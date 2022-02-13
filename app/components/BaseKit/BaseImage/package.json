@@ -1,0 +1,6 @@
+{
+    "name": "BaseImage",
+    "version": "0.0.0",
+    "public": true,
+    "main": "./BaseImage.js"
+}

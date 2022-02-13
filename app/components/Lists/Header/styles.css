@@ -1,0 +1,28 @@
+.header-list {
+    background: var(--color-gray_cultured);
+    border: 1px solid var(--color-gray_lightgray);
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.header-list ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+}
+
+.header-list ul li {
+    font-weight: bold;
+    font-size: 0.7em;
+    display: block;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #000000;
+    flex: 1
+}

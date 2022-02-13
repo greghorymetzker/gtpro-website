@@ -1,0 +1,6 @@
+{
+    "name": "BaseView",
+    "version": "0.0.0",
+    "public": true,
+    "main": "./BaseView.js"
+}
