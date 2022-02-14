@@ -1,33 +1,23 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react"
+import PropTypes from "prop-types"
 
-const BaseText = ({
-  title,
-  children,
-  style,
-  className,
-  onClick,
-  type,
-  aria,
-  target,
-  href,
-}) => {
-  const CustomTag = `${type}`;
-  const hrefProp = type == 'a' ? { href, target } : null;
+const BaseText = ({ title, children, style, className, onClick, type, aria, target, href }) => {
+  const CustomTag = `${type}`
+  const hrefProp = type == "a" ? { href, target } : null
   return (
     <CustomTag
-      className={`${className || ''}`}
+      className={`${className || ""}`}
       style={style}
       title={aria}
       {...hrefProp}
       onClick={() => {
-        if (onClick) onClick();
+        if (onClick) onClick()
       }}
     >
       {title || children}
     </CustomTag>
-  );
-};
+  )
+}
 
 BaseText.propTypes = {
   title: PropTypes.any,
@@ -35,6 +25,6 @@ BaseText.propTypes = {
   children: PropTypes.node,
   type: PropTypes.string,
   style: PropTypes.object,
-};
+}
 
-export default BaseText;
+export default BaseText

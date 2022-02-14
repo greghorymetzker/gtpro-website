@@ -1,6 +1,6 @@
 @font-face {
     font-family: "icons";
-    src: url("/fonts/icons.eot?395f23dc5e7719fe988512f97ee0965c#iefix") format("embedded-opentype"), url("/fonts/icons.woff2?395f23dc5e7719fe988512f97ee0965c") format("woff2"), url("/fonts/icons.woff?395f23dc5e7719fe988512f97ee0965c") format("woff");
+    src: url("/fonts/icons.eot?795b1d52ded64b91df31621a0c1121b5#iefix") format("embedded-opentype"), url("/fonts/icons.woff2?795b1d52ded64b91df31621a0c1121b5") format("woff2"), url("/fonts/icons.woff?795b1d52ded64b91df31621a0c1121b5") format("woff");
 }
 
 i[class^="icon-"]:before,
@@ -15,22 +15,14 @@ i[class*=" icon-"]:before {
     -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-icon_alert:before {
+.icon-icon_arrow:before {
     content: "\f101";
 }
 
-.icon-icon_calendar1:before {
+.icon-icon_arrowdown:before {
     content: "\f102";
 }
 
-.icon-icon_calendar2:before {
+.icon-icon_eyeshow:before {
     content: "\f103";
-}
-
-.icon-icon_code:before {
-    content: "\f104";
-}
-
-.icon-icon_trello:before {
-    content: "\f105";
 }

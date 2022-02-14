@@ -1,0 +1,112 @@
+  .companyinfodefault {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex: 1;
+      margin-bottom: 80px;
+  }
+  
+  .companyinfodefault_company_slogan {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 24px;
+      font-size: 1em;
+      cursor: pointer;
+  }
+  
+  .companyinfodefault_namecompany {
+      font-weight: 500;
+      font-size: 1.4em;
+      color: #999999;
+      text-align: left;
+      transition: 0.2s all ease;
+      white-space: pre;
+  }
+  
+  .companyinfodefault_slogan {
+      font-weight: 500;
+      font-size: 1.0em;
+      color: #D6D6D6;
+      text-align: left;
+      transition: 0.2s all ease;
+      margin-left: 180px;
+      width: 100%;
+  }
+  
+  .companyinfodefault_icon_arrow {
+      color: #999999;
+      transition: 0.2s all ease;
+  }
+  
+  .companyinfodefault:hover .companyinfodefault_namecompany,
+  .companyinfodefault:hover .companyinfodefault_icon_arrow,
+  .companyinfodefault.active .companyinfodefault_namecompany,
+  .companyinfodefault.active .companyinfodefault_icon_arrow {
+      color: #333333;
+  }
+  
+  .companyinfodefault:hover .companyinfodefault_slogan,
+  .companyinfodefault.active .companyinfodefault_slogan {
+      color: #FF710D;
+  }
+  
+  .companyinfodefault.active .companyinfodefault_namecompany {
+      font-weight: 800;
+      font-size: 1.7em;
+  }
+  
+  .infocompany {
+      display: flex;
+      flex-direction: column;
+      align-items: center
+  }
+  
+  .infocompany_description {
+      font-weight: 400;
+      font-size: 1.2em;
+      color: #333;
+      margin-bottom: 20px;
+      text-align: left;
+      line-height: 110%;
+  }
+  
+  .infocompany_greg_thaka {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+  }
+  
+  .infocompany_ctngreg_thaka {
+      justify-content: flex-start;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 8px;
+      margin-top: 20px;
+  }
+  
+  .infocompany_greg_thaka a {
+      text-decoration: none;
+  }
+  
+  .infocompany_greg {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-right: 20px
+  }
+  
+  .infocompany_slogan {
+      font-weight: 800;
+      font-size: 0.7em;
+      color: #FF710D;
+      text-align: left;
+      margin-left: 10px;
+  }
+  
+  .infocompany_thaka {
+      display: flex;
+      flex-direction: row;
+      align-items: center
+  }

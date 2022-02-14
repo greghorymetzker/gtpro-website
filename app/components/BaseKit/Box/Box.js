@@ -2,10 +2,16 @@ import React, { forwardRef, useMemo } from "react"
 import PropTypes from "prop-types"
 
 const Box = forwardRef((props, ref) => {
-  const { children, style, className, onClick, onMouseOver, onMouseOut, ...attrs } = props
+  const { children, style, className, onClick, onMouseOver, onMouseOut } = props
 
   const getProperties = useMemo(() => {
     let {
+      children,
+      style,
+      className,
+      onClick,
+      onMouseOver,
+      onMouseOut,
       flexDirection,
       flex,
       alignItems,
@@ -28,7 +34,7 @@ const Box = forwardRef((props, ref) => {
     if (flexProperties) {
       flexProperties = {
         display: flex ? "flex" : "block",
-        flex: flex ? Number(flex || 1) : "unset",
+        flex: flex ? flex || 1 : "unset",
         flexDirection: flexDirection || (column && "column") || (row && "row"),
         alignItems: alignItems || (aCenter && "center") || (aStart && "flex-start") || (aEnd && "flex-end"),
         justifyContent:
@@ -36,15 +42,15 @@ const Box = forwardRef((props, ref) => {
       }
     }
 
-    let style = {
+    let styleGenerator = {
       position,
       boxSizing,
       ...flexProperties,
+      ...style,
     }
 
-    return { style, attrs }
+    return { style: styleGenerator, attrs }
   }, [])
-
   return (
     <div
       className={className}
@@ -54,7 +60,6 @@ const Box = forwardRef((props, ref) => {
       ref={ref}
       style={{
         ...getProperties.style,
-        ...style,
       }}
       {...getProperties.attrs}
     >

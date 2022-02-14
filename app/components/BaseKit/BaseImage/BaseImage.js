@@ -1,6 +1,6 @@
-import React, { useMemo } from 'react';
-import { BackgroundImage, Image } from 'react-image-and-background-image-fade';
-import PropTypes from 'prop-types';
+import React, { useMemo } from "react"
+import { BackgroundImage, Image } from "react-image-and-background-image-fade"
+import PropTypes from "prop-types"
 
 const BaseImage = ({
   src,
@@ -16,10 +16,10 @@ const BaseImage = ({
   const ImageComponent = useMemo(() => {
     return backGroundMode ? (
       <BackgroundImage
-        className={`${className || ''}`}
+        className={`${className || ""}`}
         style={{
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
+          backgroundSize: "cover",
+          backgroundPosition: "center",
           ...style,
         }}
         src={src}
@@ -31,7 +31,7 @@ const BaseImage = ({
       />
     ) : (
       <Image
-        className={`${className || ''}`}
+        className={`${className || ""}`}
         style={style}
         src={src}
         width={width}
@@ -40,11 +40,11 @@ const BaseImage = ({
         title={title}
         disableLoader={disableLoader}
       />
-    );
-  }, [src]);
+    )
+  }, [src])
 
-  return ImageComponent;
-};
+  return ImageComponent
+}
 
 BaseImage.propTypes = {
   title: PropTypes.string,
@@ -55,6 +55,6 @@ BaseImage.propTypes = {
   src: PropTypes.string,
   style: PropTypes.object,
   backGroundMode: PropTypes.bool,
-};
+}
 
-export default BaseImage;
+export default BaseImage

@@ -4,17 +4,17 @@
     "description": "",
     "license": "",
     "scripts": {
-        "build": "remix build",
-        "dev": "node -r dotenv/config node_modules/.bin/remix dev",
-        "start": "remix-serve build",
-        "start:dev": "node -r dotenv/config node_modules/.bin/remix-serve build",
         "generate": "plop",
         "generate:prisma": "prisma generate",
         "gen": "plop",
-        "postinstall": "remix setup node && yarn generate:prisma",
         "sb": "storybook",
         "storybook": "start-storybook -p 6006",
-        "build-storybook": "build-storybook"
+        "build-storybook": "build-storybook",
+        "build": "remix build",
+        "dev": "remix dev",
+        "postinstall": "remix setup node",
+        "deploy": "fly deploy --remote-only",
+        "start": "remix-serve build"
     },
     "prisma": {
         "seed": "node prisma/seed.js"
@@ -26,9 +26,11 @@
         "@remix-validated-form/with-yup": "^1.0.0",
         "axios": "^0.25.0",
         "bcryptjs": "^2.4.3",
+        "clsx": "^1.1.1",
         "frappe-gantt": "^0.6.0",
         "gantt-task-react": "^0.3.7",
         "history": "^5.2.0",
+        "ismobilejs": "^1.1.1",
         "jsonwebtoken": "^8.5.1",
         "locomotive-scroll": "^4.1.3",
         "lodash.debounce": "^4.0.8",
@@ -39,7 +41,7 @@
         "react-dom": "^17.0.2",
         "react-image-and-background-image-fade": "^1.0.6",
         "react-router-dom": "^6.2.1",
-        "react-spring": "^9.3.3",
+        "react-spring": "^9.4.3",
         "react-text-mask": "^5.4.3",
         "react-tooltip": "^4.2.21",
         "react-virtual": "^2.10.4",
@@ -47,6 +49,7 @@
         "remix-auth": "^3.1.0",
         "remix-auth-form": "^1.1.1",
         "remix-validated-form": "^3.0.0",
+        "resize-observer-polyfill": "^1.5.1",
         "text-mask-addons": "^3.8.0",
         "use-resize-observer": "^8.0.0",
         "yup": "^0.32.11"

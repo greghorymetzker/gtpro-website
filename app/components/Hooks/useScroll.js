@@ -5,7 +5,7 @@ import useDebouncedResizeObserver from "../Hooks/useDebouncedResizeObserver"
 export const useScroll = ({ reRender = false }) => {
   const { scroll } = useContext(SmoothScrollContext)
   const { pathname } = useLocation()
-  const { ref, height } = useDebouncedResizeObserver(500)
+  const { ref, height } = useDebouncedResizeObserver(200)
   const [render, setrender] = useState(0)
 
   const goTo = (ind) => {
@@ -26,10 +26,10 @@ export const useScroll = ({ reRender = false }) => {
     }
   }, [pathname])
   useEffect(() => {
-    if (!render) {
-      scroll && scroll?.update()
-    }
-  }, [render])
+    // if (!render) {
+    scroll && scroll?.update()
+    // }
+  }, [height])
 
   useEffect(() => {
     if (!render) {
