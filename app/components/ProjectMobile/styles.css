@@ -1,7 +1,6 @@
   .dot {
       display: flex;
       flex-direction: column;
-      margin-bottom: 50px
   }
   
   .dot_header {
@@ -16,6 +15,10 @@
       color: #333;
       margin-bottom: 14px;
       text-align: left
+  }
+  
+  .dot_dot span {
+      font-weight: bold;
   }
   
   .dot_ctninfocompany {
@@ -66,7 +69,7 @@
   
   .dot_user {
       font-weight: 800;
-      font-size: 0.7em;
+      font-size: 1em;
       color: #FF710D;
       text-align: left;
       display: flex;

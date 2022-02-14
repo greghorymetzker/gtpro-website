@@ -84,7 +84,7 @@ export const ProjectMobile = ({ data }) => {
         <Box className={"dot_frame"} flex="1" column>
           <BaseText className={"dot_slogan"} type="span" title={data.slogan}></BaseText>
 
-          <BaseText className={"infocompany_title"} type="span" title={"RESULTADOS"}></BaseText>
+          <BaseText className={"infocompany_title"} type="span" title={"OBJETIVOS"}></BaseText>
           <BaseText
             className={"infocompany_description"}
             type="span"
@@ -98,19 +98,18 @@ export const ProjectMobile = ({ data }) => {
         </Box>
 
         <Box className={"dot_ctngreg_thaka"} flex="1" alignItems="flex-start" column>
-          <a href="https://www.linkedin.com/in/greghorymetzker/" target="_blank">
+          <a href={data.responsible[0].link} target="_blank">
             <Box className={"dot_user"} flex="1" flexDirection="row">
-              <BaseImage src={GREG} width="20px" height="20px" />
-              <BaseText type="span" title={"Product Manager & Product Designer"}></BaseText>
+              <BaseImage src={data.responsible[0].image} width="26px" height="26px" />
+              <BaseText type="span" title={data.responsible[0].title}></BaseText>
             </Box>
           </a>
 
           <Divider type="h" spaccing="10px" style={{ backgroundColor: "#D6D6D6" }}></Divider>
-          <a href="https://www.linkedin.com/in/tharyck-gusm%C3%A3o-metzker-6361251a9/" target="_blank">
+          <a href={data.responsible[1].link} target="_blank">
             <Box className={"dot_user"} flex="1" flexDirection="row">
-              <BaseImage src={THAK} width="20px" height="20px" />
-
-              <BaseText type="span" title={"Tech Lead & Dev Full Stack"}></BaseText>
+              <BaseImage src={data.responsible[1].image} width="26px" height="26px" />
+              <BaseText type="span" title={data.responsible[1].title}></BaseText>
             </Box>
           </a>
         </Box>

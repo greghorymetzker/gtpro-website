@@ -64,10 +64,10 @@
   .infocompany_description {
       font-weight: 400;
       font-size: 1.2em;
-      color: #666;
+      color: #666666;
       margin-bottom: 20px;
       text-align: left;
-      line-height: 110%;
+      line-height: 21px;
   }
   
   .infocompany_title {
@@ -75,6 +75,7 @@
       font-size: 0.9em;
       text-transform: uppercase;
       font-weight: 600;
+      margin-bottom: 4px;
   }
   
   .infocompany_greg_thaka {

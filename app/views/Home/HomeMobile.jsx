@@ -46,7 +46,7 @@ export const Home = () => {
           DESLIZE
           <Icon name="icon-icon_arrowdown" className={"imagecompanybuttonview_icon_eyeshow"} />
         </Box> */}
-        <Divider type="h" spaccing="30px" style={{ backgroundColor: "#D6D6D6" }}></Divider>
+        <Divider type="h" spaccing="0px" style={{ backgroundColor: "#D6D6D6" }}></Divider>
       </Box>
 
       <Box

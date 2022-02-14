@@ -7,8 +7,6 @@ import s from "./styles.css"
 import clsx from "clsx"
 import { useTransitionHeight } from "../Hooks/useMeasure"
 import { animated } from "react-spring"
-import GREG from "../../assets/images/greg.png"
-import THAK from "../../assets/images/tha.png"
 import BaseImage from "../BaseKit/BaseImage/BaseImage"
 export const links = [{ rel: "stylesheet", href: s }]
 
@@ -51,7 +49,7 @@ export const Project = ({ active, data, changeOpen }) => {
       >
         <div {...bind}>
           <Box className={"infocompany"} column flex>
-            <BaseText className={"infocompany_title"} type="span" title={"RESULTADOS"}></BaseText>
+            <BaseText className={"infocompany_title"} type="span" title={"OBJETIVOS"}></BaseText>
             <BaseText
               className={"infocompany_description"}
               type="span"
@@ -65,14 +63,14 @@ export const Project = ({ active, data, changeOpen }) => {
 
             <Box className={"infocompany_greg_thaka"} column flex>
               <Box className={"infocompany_ctngreg_thaka"} flex="1" justifyContent="flex-start" row>
-                <a href="https://www.linkedin.com/in/greghorymetzker/" target="_blank">
+                <a href={data.responsible[0].link} target="_blank">
                   <Box className={"infocompany_user"} row flex="unset" aCenter>
-                    <BaseImage src={GREG} width="20px" height="20px" />
+                    <BaseImage src={data.responsible[0].image} width="20px" height="20px" />
 
                     <BaseText
                       className={"infocompany_slogan"}
                       type="span"
-                      title={"Product Manager & Product Designer"}
+                      title={data.responsible[0].title}
                     ></BaseText>
                   </Box>
                 </a>
@@ -81,13 +79,14 @@ export const Project = ({ active, data, changeOpen }) => {
                   spaccing="30px"
                   style={{ backgroundColor: "#D6D6D6", height: "10px" }}
                 ></Divider>
-                <a href="https://www.linkedin.com/in/tharyck-gusm%C3%A3o-metzker-6361251a9/" target="_blank">
+                <a href={data.responsible[1].link} target="_blank">
                   <Box className={"infocompany_user"} row flex="unset" aCenter>
-                    <BaseImage src={THAK} width="20px" height="20px" />
+                    <BaseImage src={data.responsible[1].image} width="20px" height="20px" />
+
                     <BaseText
                       className={"infocompany_slogan"}
                       type="span"
-                      title={"Tech Lead & Dev Full Stack"}
+                      title={data.responsible[1].title}
                     ></BaseText>
                   </Box>
                 </a>

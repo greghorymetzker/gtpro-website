@@ -1,21 +1,20 @@
 import { useState } from "react"
 import { animated, useTransition } from "react-spring"
-import LOGO from "../../assets/images/Logo.svg"
+import IMAGEBUSCA from "../../assets/images/buscamilhas.png"
+import IMAGEDOT8 from "../../assets/images/dot8.png"
+import GREG from "../../assets/images/greg.png"
+import IMAGEPEIXE30 from "../../assets/images/peixe.png"
+import IMAGESEUINGRESSO from "../../assets/images/seuingresso.png"
+import THAK from "../../assets/images/thaka.png"
 import BaseImage from "../../components/BaseKit/BaseImage/BaseImage"
 import BaseText from "../../components/BaseKit/BaseText/BaseText"
 import Box from "../../components/BaseKit/Box/Box"
+import Divider from "../../components/BaseKit/Divider/Divider"
 import Icon from "../../components/BaseKit/Icon/Icon"
 import Footer from "../../components/Footer/Footer"
-import { Portal } from "../../components/Hooks/usePortal"
 import Project from "../../components/Project/Project"
 import s from "./styles.css"
 export const links = [{ rel: "stylesheet", href: s }, ...Project.links, ...Footer.links]
-
-import IMAGEDOT8 from "../../assets/images/dot8.png"
-import IMAGEBUSCA from "../../assets/images/buscamilhas.png"
-import IMAGEPEIXE30 from "../../assets/images/peixe.png"
-import IMAGESEUINGRESSO from "../../assets/images/seuingresso.png"
-import Divider from "../../components/BaseKit/Divider/Divider"
 
 export const PROJECTS = [
   {
@@ -27,19 +26,43 @@ export const PROJECTS = [
       "Lideramos e formamos um ordenamento estratégico/criativo em todos os ambientes do negócio. Sendo assim, atuamos diretamente na edificação do ciclo de vida do produto, desde o entendimento de todas as interfaces do problema, a preparação da equipe, até o lançamento, monitoramento e medição dos indicadores. Durante o processo, nos mantivemos alinhados aos interesses dos stakeholders, estabelecendo uma comunicação acessível e coerente, a fim de permanecermos em consonância quanto às visões estratégicas e prioridades do projeto. Dentre os resultados alcançados, em menos de um ano, construímos um aplicativo robusto, com sistemas internos escaláveis; obtivemos um crescimento financeiro de mais de 600% e estruturamos equipes coordenadas e autogerenciadas.",
     link: "https://dot8.com.br",
     image: IMAGEDOT8,
+    responsible: [
+      {
+        image: GREG,
+        title: "Product Manager & Product Designer",
+        link: "https://www.linkedin.com/in/greghorymetzker",
+      },
+      {
+        image: THAK,
+        title: "Tech Lead & Dev Full Stack",
+        link: "https://www.linkedin.com/in/tharyck-gusm%C3%A3o-metzker-6361251a9/",
+      },
+    ],
   },
   {
     id: 1,
     name: "Busca |Milhas",
     slogan: "Buscador de Passagem com Milhas",
-    meta: "Reestruturar a plataforma preexistente, criação e formação dos setores, recrutar e capacitar colaboradores, instaurar processos ágeis para aumentar a base de clientes.",
+    meta: "Organizar os setores operacionais, remodelar e criar novos features para o produto, aplicar metodologias ágeis e aumentar o faturamento.",
     result:
-      "Assumimos a liderança e a formação de um ordenamento estratégico/criativo em todos os ambientes do negócio. Sendo assim, atuamos diretamente na edificação do ciclo de vida do produto, desde o entendimento de todas as interfaces do problema, a preparação da equipe, até o lançamento, monitoramento e medição dos indicadores. Durante o processo, nos mantivemos alinhados aos objetivos dos stakeholders, estabelecendo uma comunicação acessível e coerente, a fim de permanecermos em consonância quanto às visões estratégicas e prioridades do projeto. Dentre os resultados alcançados, em menos de um ano, construímos um aplicativo robusto, com sistemas internos escaláveis; obtivemos um crescimento financeiro de mais de 600% e estruturamos equipes coordenadas e autogerenciadas.",
+      "Reestruturamos a dinâmica operacional do produto e construímos um Design System consistente por meio de metodologias ágeis que conectavam o backlog  à equipe de desenvolvimento. Por conseguinte, obtivemos como resultado uma plataforma com estrutura sólida, componentes autoajustáveis e crescimento financeiro de mais de 50% em menos de 6 meses.",
 
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat scelerisque mauris habitasse lacus, a dolor. Scelerisque eleifend feugiat venenatis massa ultricies malesuada vitae pellentesque.",
     link: "https://buscamilhas.com",
     image: IMAGEBUSCA,
+    responsible: [
+      {
+        image: GREG,
+        title: "Product Manager & Product Designer",
+        link: "https://www.linkedin.com/in/greghorymetzker",
+      },
+      {
+        image: THAK,
+        title: "Tech Lead & Dev Full Stack",
+        link: "https://www.linkedin.com/in/tharyck-gusm%C3%A3o-metzker-6361251a9/",
+      },
+    ],
   },
   {
     id: 2,
@@ -47,25 +70,49 @@ export const PROJECTS = [
     slogan: "Rede Social Profissional de Vídeo",
     meta: "Reestruturar a plataforma preexistente, criação e formação dos setores, recrutar e capacitar colaboradores, instaurar processos ágeis para aumentar a base de clientes.",
     result:
-      "Assumimos a liderança e a formação de um ordenamento estratégico/criativo em todos os ambientes do negócio. Sendo assim, atuamos diretamente na edificação do ciclo de vida do produto, desde o entendimento de todas as interfaces do problema, a preparação da equipe, até o lançamento, monitoramento e medição dos indicadores. Durante o processo, nos mantivemos alinhados aos objetivos dos stakeholders, estabelecendo uma comunicação acessível e coerente, a fim de permanecermos em consonância quanto às visões estratégicas e prioridades do projeto. Dentre os resultados alcançados, em menos de um ano, construímos um aplicativo robusto, com sistemas internos escaláveis; obtivemos um crescimento financeiro de mais de 600% e estruturamos equipes coordenadas e autogerenciadas.",
+      "Planejamos e criamos o visual do produto por meio do desenvolvimento de um sistema de design robusto para Web e Mobile e das práxis de arquitetura Cloud. Durante a criação do projeto, utilizamos técnicas de UX Design, UX Writing, User Research, Discovery, React Native, ReDux Sagas e Microsserviços.",
 
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat scelerisque mauris habitasse lacus, a dolor. Scelerisque eleifend feugiat venenatis massa ultricies malesuada vitae pellentesque.",
     link: "https://peixe30.com",
     image: IMAGEPEIXE30,
+    responsible: [
+      {
+        image: GREG,
+        title: "Product Designer",
+        link: "https://www.linkedin.com/in/greghorymetzker",
+      },
+      {
+        image: THAK,
+        title: "Dev Full Stack",
+        link: "https://www.linkedin.com/in/tharyck-gusm%C3%A3o-metzker-6361251a9/",
+      },
+    ],
   },
   {
     id: 3,
     name: "Seu |Ingresso",
     slogan: "Rede Social Profissional de Vídeo",
-    meta: "Reestruturar a plataforma preexistente, criação e formação dos setores, recrutar e capacitar colaboradores, instaurar processos ágeis para aumentar a base de clientes.",
+    meta: "Desenvolver uma plataforma  Web e Mobile destinada à criação, organização e gestão de eventos para organizadores.",
     result:
-      "Assumimos a liderança e a formação de um ordenamento estratégico/criativo em todos os ambientes do negócio. Sendo assim, atuamos diretamente na edificação do ciclo de vida do produto, desde o entendimento de todas as interfaces do problema, a preparação da equipe, até o lançamento, monitoramento e medição dos indicadores. Durante o processo, nos mantivemos alinhados aos objetivos dos stakeholders, estabelecendo uma comunicação acessível e coerente, a fim de permanecermos em consonância quanto às visões estratégicas e prioridades do projeto. Dentre os resultados alcançados, em menos de um ano, construímos um aplicativo robusto, com sistemas internos escaláveis; obtivemos um crescimento financeiro de mais de 600% e estruturamos equipes coordenadas e autogerenciadas.",
+      "Projetamos e elaboramos o visual do produto por meio do desenvolvimento de um sistema de design robusto para Web e Mobile e das práxis de arquitetura Cloud. Durante a criação do projeto, utilizamos técnicas de UX Design, UX Writing, User Research, Discovery, React Native, ReDux Sagas e Microsserviços.",
 
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat scelerisque mauris habitasse lacus, a dolor. Scelerisque eleifend feugiat venenatis massa ultricies malesuada vitae pellentesque.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat scelerisque mauris habitasse lacus, a dolor. Scelerisque eleifend feugiat venenatis massa ultricies malesuada vitae pellentesque.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat scelerisque mauris habitasse lacus, a dolor. Scelerisque eleifend feugiat venenatis massa ultricies malesuada vitae pellentesque.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat scelerisque mauris habitasse lacus, a dolor. Scelerisque eleifend feugiat venenatis massa ultricies malesuada vitae pellentesque.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat scelerisque mauris habitasse lacus, a dolor. Scelerisque eleifend feugiat venenatis massa ultricies malesuada vitae pellentesque.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat scelerisque mauris habitasse lacus, a dolor. Scelerisque eleifend feugiat venenatis massa ultricies malesuada vitae pellentesque.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat scelerisque mauris habitasse lacus, a dolor. Scelerisque eleifend feugiat venenatis massa ultricies malesuada vitae pellentesque.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat scelerisque mauris habitasse lacus, a dolor. Scelerisque eleifend feugiat venenatis massa ultricies malesuada vitae pellentesque.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat scelerisque mauris habitasse lacus, a dolor. Scelerisque eleifend feugiat venenatis massa ultricies malesuada vitae pellentesque.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat scelerisque mauris habitasse lacus, a dolor. Scelerisque eleifend feugiat venenatis massa ultricies malesuada vitae pellentesque.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat scelerisque mauris habitasse lacus, a dolor. Scelerisque eleifend feugiat venenatis massa ultricies malesuada vitae pellentesque.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat scelerisque mauris habitasse lacus, a dolor. Scelerisque eleifend feugiat venenatis massa ultricies malesuada vitae pellentesque.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat scelerisque mauris habitasse lacus, a dolor. Scelerisque eleifend feugiat venenatis massa ultricies malesuada vitae pellentesque.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat scelerisque mauris habitasse lacus, a dolor. Scelerisque eleifend feugiat venenatis massa ultricies malesuada vitae pellentesque.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat scelerisque mauris habitasse lacus, a dolor. Scelerisque eleifend feugiat venenatis massa ultricies malesuada vitae pellentesque.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat scelerisque mauris habitasse lacus, a dolor. Scelerisque eleifend feugiat venenatis massa ultricies malesuada vitae pellentesque.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat scelerisque mauris habitasse lacus, a dolor. Scelerisque eleifend feugiat venenatis massa ultricies malesuada vitae pellentesque.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat scelerisque mauris habitasse lacus, a dolor. Scelerisque eleifend feugiat venenatis massa ultricies malesuada vitae pellentesque.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat scelerisque mauris habitasse lacus, a dolor. Scelerisque eleifend feugiat venenatis massa ultricies malesuada vitae pellentesque.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat scelerisque mauris habitasse lacus, a dolor. Scelerisque eleifend feugiat venenatis massa ultricies malesuada vitae pellentesque.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat scelerisque mauris habitasse lacus, a dolor. Scelerisque eleifend feugiat venenatis massa ultricies malesuada vitae pellentesque.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat scelerisque mauris habitasse lacus, a dolor. Scelerisque eleifend feugiat venenatis massa ultricies malesuada vitae pellentesque.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat scelerisque mauris habitasse lacus, a dolor. Scelerisque eleifend feugiat venenatis massa ultricies malesuada vitae pellentesque.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat scelerisque mauris habitasse lacus, a dolor. Scelerisque eleifend feugiat venenatis massa ultricies malesuada vitae pellentesque.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat scelerisque mauris habitasse lacus, a dolor. Scelerisque eleifend feugiat venenatis massa ultricies malesuada vitae pellentesque.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat scelerisque mauris habitasse lacus, a dolor. Scelerisque eleifend feugiat venenatis massa ultricies malesuada vitae pellentesque.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat scelerisque mauris habitasse lacus, a dolor. Scelerisque eleifend feugiat venenatis massa ultricies malesuada vitae pellentesque.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat scelerisque mauris habitasse lacus, a dolor. Scelerisque eleifend feugiat venenatis massa ultricies malesuada vitae pellentesque.",
     link: "https://apps.apple.com/es/app/seu-ingresso/id1560275114",
     image: IMAGESEUINGRESSO,
+    responsible: [
+      {
+        image: GREG,
+        title: "Product Designer",
+        link: "https://www.linkedin.com/in/greghorymetzker",
+      },
+      {
+        image: THAK,
+        title: "Dev Full Stack",
+        link: "https://www.linkedin.com/in/tharyck-gusm%C3%A3o-metzker-6361251a9/",
+      },
+    ],
   },
 ]
 export const Home = () => {
