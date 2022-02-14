@@ -12,7 +12,22 @@ export const ProjectMobile = ({ data }) => {
   return (
     <Box className={"dot"} flex="1" colum>
       <Box className={"dot_header"} flex="1" column>
-        <BaseText className={"dot_dot"} type="span" title={data.name}></BaseText>
+        <BaseText
+          className={"dot_dot"}
+          type="span"
+          title={
+            <>
+              {data.name.split("|")[0]}
+              <span
+                style={{
+                  color: "#FF710D",
+                }}
+              >
+                {data.name.split("|")[1]}
+              </span>
+            </>
+          }
+        ></BaseText>
         <Box className="image-mobile">
           <BaseImage
             src={data.image}
@@ -69,7 +84,17 @@ export const ProjectMobile = ({ data }) => {
         <Box className={"dot_frame"} flex="1" column>
           <BaseText className={"dot_slogan"} type="span" title={data.slogan}></BaseText>
 
-          <BaseText className={"dot_description"} type="span" title={data.description}></BaseText>
+          <BaseText className={"infocompany_title"} type="span" title={"RESULTADOS"}></BaseText>
+          <BaseText
+            className={"infocompany_description"}
+            type="span"
+            title={data.meta}
+            style={{
+              marginBottom: "20px",
+            }}
+          ></BaseText>
+          <BaseText className={"infocompany_title"} type="span" title={"RESULTADOS"}></BaseText>
+          <BaseText className={"infocompany_description"} type="span" title={data.result}></BaseText>
         </Box>
 
         <Box className={"dot_ctngreg_thaka"} flex="1" alignItems="flex-start" column>

@@ -20,6 +20,13 @@
       width: 100%;
   }
   
+  .footer_buttonlinks a {
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: row;
+  }
+  
   .buttonlinksdefault {
       display: flex;
       flex-direction: row;

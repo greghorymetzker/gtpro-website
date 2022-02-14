@@ -15,22 +15,27 @@ import IMAGEDOT8 from "../../assets/images/dot8.png"
 import IMAGEBUSCA from "../../assets/images/buscamilhas.png"
 import IMAGEPEIXE30 from "../../assets/images/peixe.png"
 import IMAGESEUINGRESSO from "../../assets/images/seuingresso.png"
+import Divider from "../../components/BaseKit/Divider/Divider"
 
 export const PROJECTS = [
   {
     id: 0,
-    name: "Dot8",
+    name: "DOT|8",
     slogan: "Sistema de Controle e Gestão de Ponto",
-
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat scelerisque mauris habitasse lacus, a dolor. Scelerisque eleifend feugiat venenatis massa ultricies malesuada vitae pellentesque.",
+    meta: "Remodelar a plataforma preexistente, construir a estrutura organizacional, recrutar e capacitar colaboradores, instaurar processos ágeis para aumentar a base de clientes, criar novos produtos.",
+    result:
+      "Lideramos e formamos um ordenamento estratégico/criativo em todos os ambientes do negócio. Sendo assim, atuamos diretamente na edificação do ciclo de vida do produto, desde o entendimento de todas as interfaces do problema, a preparação da equipe, até o lançamento, monitoramento e medição dos indicadores. Durante o processo, nos mantivemos alinhados aos interesses dos stakeholders, estabelecendo uma comunicação acessível e coerente, a fim de permanecermos em consonância quanto às visões estratégicas e prioridades do projeto. Dentre os resultados alcançados, em menos de um ano, construímos um aplicativo robusto, com sistemas internos escaláveis; obtivemos um crescimento financeiro de mais de 600% e estruturamos equipes coordenadas e autogerenciadas.",
     link: "https://dot8.com.br",
     image: IMAGEDOT8,
   },
   {
     id: 1,
-    name: "Busca Milhas",
+    name: "Busca |Milhas",
     slogan: "Buscador de Passagem com Milhas",
+    meta: "Reestruturar a plataforma preexistente, criação e formação dos setores, recrutar e capacitar colaboradores, instaurar processos ágeis para aumentar a base de clientes.",
+    result:
+      "Assumimos a liderança e a formação de um ordenamento estratégico/criativo em todos os ambientes do negócio. Sendo assim, atuamos diretamente na edificação do ciclo de vida do produto, desde o entendimento de todas as interfaces do problema, a preparação da equipe, até o lançamento, monitoramento e medição dos indicadores. Durante o processo, nos mantivemos alinhados aos objetivos dos stakeholders, estabelecendo uma comunicação acessível e coerente, a fim de permanecermos em consonância quanto às visões estratégicas e prioridades do projeto. Dentre os resultados alcançados, em menos de um ano, construímos um aplicativo robusto, com sistemas internos escaláveis; obtivemos um crescimento financeiro de mais de 600% e estruturamos equipes coordenadas e autogerenciadas.",
+
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat scelerisque mauris habitasse lacus, a dolor. Scelerisque eleifend feugiat venenatis massa ultricies malesuada vitae pellentesque.",
     link: "https://buscamilhas.com",
@@ -38,8 +43,12 @@ export const PROJECTS = [
   },
   {
     id: 2,
-    name: "Peixe 30",
+    name: "Peixe |30",
     slogan: "Rede Social Profissional de Vídeo",
+    meta: "Reestruturar a plataforma preexistente, criação e formação dos setores, recrutar e capacitar colaboradores, instaurar processos ágeis para aumentar a base de clientes.",
+    result:
+      "Assumimos a liderança e a formação de um ordenamento estratégico/criativo em todos os ambientes do negócio. Sendo assim, atuamos diretamente na edificação do ciclo de vida do produto, desde o entendimento de todas as interfaces do problema, a preparação da equipe, até o lançamento, monitoramento e medição dos indicadores. Durante o processo, nos mantivemos alinhados aos objetivos dos stakeholders, estabelecendo uma comunicação acessível e coerente, a fim de permanecermos em consonância quanto às visões estratégicas e prioridades do projeto. Dentre os resultados alcançados, em menos de um ano, construímos um aplicativo robusto, com sistemas internos escaláveis; obtivemos um crescimento financeiro de mais de 600% e estruturamos equipes coordenadas e autogerenciadas.",
+
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat scelerisque mauris habitasse lacus, a dolor. Scelerisque eleifend feugiat venenatis massa ultricies malesuada vitae pellentesque.",
     link: "https://peixe30.com",
@@ -47,8 +56,12 @@ export const PROJECTS = [
   },
   {
     id: 3,
-    name: "Seu Ingresso",
+    name: "Seu |Ingresso",
     slogan: "Rede Social Profissional de Vídeo",
+    meta: "Reestruturar a plataforma preexistente, criação e formação dos setores, recrutar e capacitar colaboradores, instaurar processos ágeis para aumentar a base de clientes.",
+    result:
+      "Assumimos a liderança e a formação de um ordenamento estratégico/criativo em todos os ambientes do negócio. Sendo assim, atuamos diretamente na edificação do ciclo de vida do produto, desde o entendimento de todas as interfaces do problema, a preparação da equipe, até o lançamento, monitoramento e medição dos indicadores. Durante o processo, nos mantivemos alinhados aos objetivos dos stakeholders, estabelecendo uma comunicação acessível e coerente, a fim de permanecermos em consonância quanto às visões estratégicas e prioridades do projeto. Dentre os resultados alcançados, em menos de um ano, construímos um aplicativo robusto, com sistemas internos escaláveis; obtivemos um crescimento financeiro de mais de 600% e estruturamos equipes coordenadas e autogerenciadas.",
+
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat scelerisque mauris habitasse lacus, a dolor. Scelerisque eleifend feugiat venenatis massa ultricies malesuada vitae pellentesque.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat scelerisque mauris habitasse lacus, a dolor. Scelerisque eleifend feugiat venenatis massa ultricies malesuada vitae pellentesque.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat scelerisque mauris habitasse lacus, a dolor. Scelerisque eleifend feugiat venenatis massa ultricies malesuada vitae pellentesque.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat scelerisque mauris habitasse lacus, a dolor. Scelerisque eleifend feugiat venenatis massa ultricies malesuada vitae pellentesque.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat scelerisque mauris habitasse lacus, a dolor. Scelerisque eleifend feugiat venenatis massa ultricies malesuada vitae pellentesque.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat scelerisque mauris habitasse lacus, a dolor. Scelerisque eleifend feugiat venenatis massa ultricies malesuada vitae pellentesque.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat scelerisque mauris habitasse lacus, a dolor. Scelerisque eleifend feugiat venenatis massa ultricies malesuada vitae pellentesque.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat scelerisque mauris habitasse lacus, a dolor. Scelerisque eleifend feugiat venenatis massa ultricies malesuada vitae pellentesque.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat scelerisque mauris habitasse lacus, a dolor. Scelerisque eleifend feugiat venenatis massa ultricies malesuada vitae pellentesque.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat scelerisque mauris habitasse lacus, a dolor. Scelerisque eleifend feugiat venenatis massa ultricies malesuada vitae pellentesque.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat scelerisque mauris habitasse lacus, a dolor. Scelerisque eleifend feugiat venenatis massa ultricies malesuada vitae pellentesque.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat scelerisque mauris habitasse lacus, a dolor. Scelerisque eleifend feugiat venenatis massa ultricies malesuada vitae pellentesque.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat scelerisque mauris habitasse lacus, a dolor. Scelerisque eleifend feugiat venenatis massa ultricies malesuada vitae pellentesque.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat scelerisque mauris habitasse lacus, a dolor. Scelerisque eleifend feugiat venenatis massa ultricies malesuada vitae pellentesque.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat scelerisque mauris habitasse lacus, a dolor. Scelerisque eleifend feugiat venenatis massa ultricies malesuada vitae pellentesque.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat scelerisque mauris habitasse lacus, a dolor. Scelerisque eleifend feugiat venenatis massa ultricies malesuada vitae pellentesque.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat scelerisque mauris habitasse lacus, a dolor. Scelerisque eleifend feugiat venenatis massa ultricies malesuada vitae pellentesque.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat scelerisque mauris habitasse lacus, a dolor. Scelerisque eleifend feugiat venenatis massa ultricies malesuada vitae pellentesque.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat scelerisque mauris habitasse lacus, a dolor. Scelerisque eleifend feugiat venenatis massa ultricies malesuada vitae pellentesque.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat scelerisque mauris habitasse lacus, a dolor. Scelerisque eleifend feugiat venenatis massa ultricies malesuada vitae pellentesque.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat scelerisque mauris habitasse lacus, a dolor. Scelerisque eleifend feugiat venenatis massa ultricies malesuada vitae pellentesque.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat scelerisque mauris habitasse lacus, a dolor. Scelerisque eleifend feugiat venenatis massa ultricies malesuada vitae pellentesque.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat scelerisque mauris habitasse lacus, a dolor. Scelerisque eleifend feugiat venenatis massa ultricies malesuada vitae pellentesque.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat scelerisque mauris habitasse lacus, a dolor. Scelerisque eleifend feugiat venenatis massa ultricies malesuada vitae pellentesque.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat scelerisque mauris habitasse lacus, a dolor. Scelerisque eleifend feugiat venenatis massa ultricies malesuada vitae pellentesque.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat scelerisque mauris habitasse lacus, a dolor. Scelerisque eleifend feugiat venenatis massa ultricies malesuada vitae pellentesque.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat scelerisque mauris habitasse lacus, a dolor. Scelerisque eleifend feugiat venenatis massa ultricies malesuada vitae pellentesque.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat scelerisque mauris habitasse lacus, a dolor. Scelerisque eleifend feugiat venenatis massa ultricies malesuada vitae pellentesque.",
     link: "https://apps.apple.com/es/app/seu-ingresso/id1560275114",
@@ -72,6 +85,7 @@ export const Home = () => {
         flex
         style={{
           padding: "60px 80px",
+          marginBottom: "60px",
         }}
       >
         <Box column>
@@ -80,14 +94,14 @@ export const Home = () => {
             type="h3"
             title={
               <>
-                {open.name}
-                {/* <span
+                {open.name.split("|")[0]}
+                <span
                   style={{
                     color: "#FF710D",
                   }}
                 >
-                  8
-                </span> */}
+                  {open.name.split("|")[1]}
+                </span>
               </>
             }
           ></BaseText>
@@ -166,6 +180,13 @@ export const Home = () => {
               </>
             }
           ></BaseText>
+
+          <Divider type="h" spaccing="0px" style={{ backgroundColor: "#D6D6D6" }}></Divider>
+          <Box
+            style={{
+              marginBottom: "30px",
+            }}
+          ></Box>
 
           {PROJECTS?.map((e) => {
             return (

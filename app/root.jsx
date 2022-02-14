@@ -9,9 +9,6 @@ import {
   useTransition,
 } from "remix"
 import isMobile from "ismobilejs"
-export function meta() {
-  return { title: "Planejamento" }
-}
 
 import resetcss from "normalize.css"
 import fonts from "./assets/fonts/icons.css"
@@ -26,6 +23,10 @@ export function links() {
     { rel: "stylesheet", href: fonts },
     { rel: "stylesheet", href: global },
   ]
+}
+
+export function meta() {
+  return { title: "GTpro" }
 }
 export const loader = async ({ request }) => {
   const mobile = isMobile(request.headers.get("user-agent")).any

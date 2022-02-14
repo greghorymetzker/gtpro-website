@@ -22,19 +22,25 @@ export const Footer = ({ relative }) => {
       <Box className={"footer"} flex="1" jCenter aCenter column>
         <Box className={"footer_buttonlinks"} flex="1" jStart aCenter row>
           <Box className={"buttonlinksdefault"} flex="1" aCenter row>
-            <BaseText className={"buttonlinksdefault_whatsapp"} type="span" title={"E-mail"}></BaseText>
+            <a href="mailto:greghorygusmao@gmail.com">
+              <BaseText className={"buttonlinksdefault_whatsapp"} type="span" title={"E-mail"}></BaseText>
 
-            <Icon name="icon-icon_arrow" className={"buttonlinksdefault_icon_arrow"} />
+              <Icon name="icon-icon_arrow" className={"buttonlinksdefault_icon_arrow"} />
+            </a>
           </Box>
           <Box className={"buttonlinksdefault"} flex="1" jCenter aCenter row>
-            <BaseText className={"buttonlinksdefault_whatsapp"} type="span" title={"Whatsapp"}></BaseText>
+            <a href="https://api.whatsapp.com/send?phone=5531982325284&text=Ol%C3%A1" target="_blank">
+              <BaseText className={"buttonlinksdefault_whatsapp"} type="span" title={"Whatsapp"}></BaseText>
 
-            <Icon name="icon-icon_arrow" className={"buttonlinksdefault_icon_arrow"} />
+              <Icon name="icon-icon_arrow" className={"buttonlinksdefault_icon_arrow"} />
+            </a>
           </Box>
           <Box className={"buttonlinksdefault"} flex="1" jEnd aCenter row>
-            <BaseText className={"buttonlinksdefault_whatsapp"} type="span" title={"Linkedin"}></BaseText>
+            <a href="https://www.linkedin.com/company/gtproducts/about/" target="_blank">
+              <BaseText className={"buttonlinksdefault_whatsapp"} type="span" title={"Linkedin"}></BaseText>
 
-            <Icon name="icon-icon_arrow" className={"buttonlinksdefault_icon_arrow"} />
+              <Icon name="icon-icon_arrow" className={"buttonlinksdefault_icon_arrow"} />
+            </a>
           </Box>
         </Box>
       </Box>

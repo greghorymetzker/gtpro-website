@@ -31,7 +31,11 @@ export const Project = ({ active, data, changeOpen }) => {
       }}
     >
       <Box className={"companyinfodefault_company_slogan"} flex="1" aCenter row>
-        <BaseText className={"companyinfodefault_namecompany"} type="span" title={data?.name}></BaseText>
+        <BaseText
+          className={"companyinfodefault_namecompany"}
+          type="span"
+          title={data?.name.replace("|", "")}
+        ></BaseText>
 
         <BaseText className={"companyinfodefault_slogan"} type="span" title={data?.slogan}></BaseText>
 
@@ -47,7 +51,17 @@ export const Project = ({ active, data, changeOpen }) => {
       >
         <div {...bind}>
           <Box className={"infocompany"} column flex>
-            <BaseText className={"infocompany_description"} type="span" title={data.description}></BaseText>
+            <BaseText className={"infocompany_title"} type="span" title={"RESULTADOS"}></BaseText>
+            <BaseText
+              className={"infocompany_description"}
+              type="span"
+              title={data.meta}
+              style={{
+                marginBottom: "20px",
+              }}
+            ></BaseText>
+            <BaseText className={"infocompany_title"} type="span" title={"RESULTADOS"}></BaseText>
+            <BaseText className={"infocompany_description"} type="span" title={data.result}></BaseText>
 
             <Box className={"infocompany_greg_thaka"} column flex>
               <Box className={"infocompany_ctngreg_thaka"} flex="1" justifyContent="flex-start" row>

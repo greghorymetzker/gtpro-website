@@ -3,6 +3,7 @@ import Icon from "~/components/BaseKit/Icon/Icon"
 import IMAGEDOT8 from "../../assets/images/companydot8.png"
 import LOGO from "../../assets/images/Logo.svg"
 import Box from "../../components/BaseKit/Box/Box"
+import Divider from "../../components/BaseKit/Divider/Divider"
 import Footer from "../../components/Footer/Footer"
 import ProjectMobile from "../../components/ProjectMobile/ProjectMobile"
 import { PROJECTS } from "./Home"
@@ -18,9 +19,9 @@ export const Home = () => {
         aCenter
         jCenter
         style={{
-          height: "80vh",
+          // height: "40vh",
           width: "100%",
-          marginBottom: "20vh",
+          // marginBottom: "20vh",
         }}
       >
         <BaseText
@@ -32,7 +33,7 @@ export const Home = () => {
           }
           type="span"
         ></BaseText>
-        <Box
+        {/* <Box
           className={"swipe_bottom"}
           column
           flex
@@ -44,7 +45,8 @@ export const Home = () => {
         >
           DESLIZE
           <Icon name="icon-icon_arrowdown" className={"imagecompanybuttonview_icon_eyeshow"} />
-        </Box>
+        </Box> */}
+        <Divider type="h" spaccing="30px" style={{ backgroundColor: "#D6D6D6" }}></Divider>
       </Box>
 
       <Box
