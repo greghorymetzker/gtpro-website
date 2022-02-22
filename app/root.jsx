@@ -49,7 +49,7 @@ export default function App() {
               content="Somos especializados em prover soluções end-to-end de design e desenvolvimento full-stack."
             />
             <meta property="og:url" content="https://gtpro.online" />
-            <meta property="og:image" name="image" content="https://gtpro.online/banner.jpg" />
+            <meta property="og:image" name="image" content="https://gtpro.online/banner.png" />
             <meta name="author" content="Greghory & Tharyck" />
             <script
               dangerouslySetInnerHTML={{
