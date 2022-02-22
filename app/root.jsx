@@ -43,6 +43,14 @@ export default function App() {
           <head>
             <meta charSet="utf-8" />
             <meta name="viewport" content="width=device-width,initial-scale=1" />
+            <meta property="og:title" content="GTpro" />
+            <meta
+              property="og:description"
+              content="Somos especializados em prover soluções end-to-end de design e desenvolvimento full-stack."
+            />
+            <meta property="og:url" content="https://gtpro.online" />
+            <meta property="og:image" content="https://gtpro.online/banner.jpg" />
+
             <Meta />
             <Links />
           </head>
