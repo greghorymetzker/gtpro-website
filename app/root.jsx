@@ -51,6 +51,7 @@ export default function App() {
             <meta property="og:url" content="https://gtpro.online" />
             <meta property="og:image" content="https://gtpro.online/banner.jpg" />
 
+            {/*  */}
             <Meta />
             <Links />
           </head>
