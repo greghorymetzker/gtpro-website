@@ -51,17 +51,15 @@ export default function App() {
             <meta property="og:url" content="https://gtpro.online" />
             <meta property="og:image" name="image" content="https://gtpro.online/banner.png" />
             <meta name="author" content="Greghory & Tharyck" />
+            <script src="https://www.googletagmanager.com/gtag/js?id=G-BD6EBKF1T2" />
             <script
               dangerouslySetInnerHTML={{
                 __html: `
-              <script async src="https://www.googletagmanager.com/gtag/js?id=G-BD6EBKF1T2"></script>
-              <script>
-                window.dataLayer = window.dataLayer || [];
+              window.dataLayer = window.dataLayer || [];
                 function gtag(){dataLayer.push(arguments);}
                 gtag('js', new Date());
 
                 gtag('config', 'G-BD6EBKF1T2');
-              </script>  
 
               `,
               }}
