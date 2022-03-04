@@ -1,7 +1,4 @@
 import BaseText from "~/components/BaseKit/BaseText/BaseText"
-import Icon from "~/components/BaseKit/Icon/Icon"
-import IMAGEDOT8 from "../../assets/images/companydot8.png"
-import LOGO from "../../assets/images/Logo.svg"
 import Box from "../../components/BaseKit/Box/Box"
 import Divider from "../../components/BaseKit/Divider/Divider"
 import Footer from "../../components/Footer/Footer"
