@@ -1,49 +1,99 @@
-## Development
+# GTPro Website
 
-From your terminal:
+Este repositório contém o código-fonte do **GTPro Website**, uma aplicação moderna desenvolvida com tecnologias atuais para entrega de conteúdo web eficiente.
 
-```sh
-npm run dev
+## 🛠️ Tecnologias Utilizadas
+
+- **Frontend**: Remix, JavaScript/React
+- **Backend**: Node.js
+- **Banco de Dados**: Prisma (MySQL/PostgreSQL)
+- **Outras Ferramentas**: Docker, ESLint, Prettier
+
+## 📂 Estrutura do Projeto
+
+```
+gtpro-website/
+├── app/                # Código principal do projeto
+├── prisma/             # Configuração do Prisma e migrações
+├── public/             # Arquivos estáticos (imagens, ícones, etc.)
+├── Dockerfile          # Configuração para containerização
+├── package.json        # Dependências e scripts npm
+├── README.md           # Documentação do projeto
 ```
 
-This starts your app in development mode, rebuilding assets on file changes.
+## 🚀 Como Executar o Projeto
 
-## Deployment
+### Pré-requisitos
+Certifique-se de que você tenha as seguintes ferramentas instaladas:
 
-First, build your app for production:
+- [Node.js](https://nodejs.org/)
+- [Docker](https://www.docker.com/)
+- [MySQL/PostgreSQL](https://www.mysql.com/ ou https://www.postgresql.org/)
 
-```sh
-npm run build
-```
+### Passo a Passo
 
-Then run the app in production mode:
+1. **Clone o Repositório**
 
-```sh
-npm start
-```
+   ```bash
+   git clone https://github.com/greghorymetzker/gtpro-website.git
+   cd gtpro-website
+   ```
 
-Now you'll need to pick a host to deploy it to.
+2. **Instale as Dependências**
 
-### DIY
+   ```bash
+   npm install
+   ```
 
-If you're familiar with deploying node applications, the built-in Remix app server is production-ready.
+3. **Configure o Banco de Dados**
 
-Make sure to deploy the output of `remix build`
+   - Edite o arquivo `prisma/.env` com as credenciais do seu banco de dados.
+   - Execute as migrações para criar o esquema do banco de dados:
 
-- `build/`
-- `public/build/`
+     ```bash
+     npx prisma migrate dev
+     ```
 
-### Using a Template
+4. **Inicie a Aplicação com Docker**
 
-When you ran `npx create-remix@latest` there were a few choices for hosting. You can run that again to create a new project, then copy over your `app/` folder to the new project that's pre-configured for your target server.
+   - Execute o comando abaixo para construir e iniciar os containers:
 
-```sh
-cd ..
-# create a new project, and pick a pre-configured host
-npx create-remix@latest
-cd my-new-remix-app
-# remove the new project's app (not the old one!)
-rm -rf app
-# copy your app over
-cp -R ../my-old-remix-app/app app
-```
+     ```bash
+     docker-compose up
+     ```
+
+   - Ou, inicie manualmente:
+
+     ```bash
+     npm run dev
+     ```
+
+5. **Acesse a Aplicação**
+
+   Abra seu navegador e acesse:
+
+   ```
+   http://localhost:3000
+   ```
+
+## 🤝 Contribuição
+
+1. Faça um fork do projeto.
+2. Crie uma branch para sua feature:
+
+   ```bash
+   git checkout -b minha-feature
+   ```
+
+3. Envie suas alterações:
+
+   ```bash
+   git commit -m "Descrição da minha feature"
+   git push origin minha-feature
+   ```
+
+4. Abra um pull request no repositório principal.
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT. Consulte o arquivo `LICENSE` para mais detalhes.
